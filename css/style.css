@@ -1,0 +1,309 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    background: url(../images/hollowed-boxes.svg);
+    text-align: center;
+    font-size: 2rlh;
+  }
+  
+  h2 {
+    margin: 0;
+    border: 2px solid gray;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .general {
+    display: flex;
+    flex-direction: row-reverse;
+  
+  
+  }
+  
+  .cloud {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    position: relative;
+    height: 39rem;
+      width: 43rem;
+    display: inline-block;
+    align-items: center;
+  }
+  
+  .mainImage {
+    position: absolute;
+    height: 32rem;
+    width: 38rem;
+    align-items: center;
+    top: 0;
+    right: 0;
+  }
+  
+  .dImage {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  }
+  
+  .gallery--item_image {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+  }
+  
+  .gallery {
+  
+    list-style: none;
+    max-height: 65vh;
+    overflow: auto;
+    margin-top: 3%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-around;
+  }
+  
+  .gallery--item_title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    display: block;
+    width: 15rem;
+    font-size: 2rem;
+    background-color: aliceblue;
+    text-align: center;
+  }
+  
+  
+  .gallery--item_image {
+    display: block;
+    width: 35vh;
+      height: 15rem;
+    
+  }
+  
+  .gallery--item {
+    border: 2px solid lightgrey;
+    border-radius: 40px;
+    overflow: hidden;
+    width: 15rem;
+    margin-top: 10px;
+  }
+  
+  .gallery--item:hover {
+    filter: blur(5px);
+    
+  }
+  
+  .logo {
+    font-family: 'lakeshore_brkregular';
+    letter-spacing: 1.5rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    background-color: azure;
+  }
+  
+  .gallery li:nth-child(1) {
+    margin-top: 0;
+  }
+  
+  .detailed-title {
+    font-family: 'airstream_nfregular', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 6px;
+    position: absolute;
+    border: 2px solid lightcoral;
+    background-color: bisque;
+    font-size: 3rem;
+    text-align: center;
+    width: 25rem;
+    bottom: 15%;
+    left: 0;
+  }
+  
+  
+  
+  
+  @media screen and (orientation: portrait) {
+    .mainImage {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+  
+    }
+  
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-height: 45vh;
+        overflow: scroll;
+        margin-top: 3%;
+      
+        margin-left: auto;
+    }
+  
+    .gallery--item {
+      width: 12rem;
+    }
+  
+    .gallery--item_image {
+      width: 12rem;
+        height: 12rem;
+    }
+  
+    .gallery--item_title {
+      width: 12rem;
+        /* font-size: 2rem; */
+    }
+  
+    .general {
+      position: relative;
+  
+      min-height: 100hv;
+        max-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+  .detailed-title {
+    bottom: 8%;
+  }
+  }
+  
+  @media screen and(orientation: landscape) {
+    .gallery--item_image {
+        width: 35rem;
+        height: 35rem;
+      }
+    
+      .gallery--item_title {
+        width: 35rem;
+        text-align: center;
+      }
+    
+      .gallery--item {
+        width: 39rem;
+      }
+    .cloud {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      width: 100hv;
+      height: 10hv;
+    }
+  
+    .gallery {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-height: 100vh;
+      overflow: auto;
+      margin-top: 3%;
+      margin-right: auto;
+      margin-left: auto;
+      justify-content: space-around;
+      font-size: 5 rem;
+        /* width: 35rem; */
+  
+    }
+  
+    .general {
+      position: relative;
+    }
+  
+    .mainImage {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      height: 60vh;
+        width: 100vh;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .detailed-title:hover {
+      text-align: start;
+      white-space: initial;
+      overflow: visible;
+      text-overflow: initial;
+      font-size: 2rem;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: bold;
+      letter-spacing: 2px;
+      width: 45rem;
+      text-align: left;
+      max-height: 5em;
+      overflow: auto;
+    }
+  .cloud {
+    width: 100vh;
+    height: 60vh;
+  
+  }
+  
+  .mainImage {
+    width: 80vh;
+  }
+  
+  .gallery {
+    width: 20rem;
+    font-size: 10rem;
+  }
+  
+  .gallery--item {
+    width: 20rem;
+  }
+  
+  .gallery--item_image {
+    width: 20rem;
+    height: 20rem;
+  }
+  
+  .gallery--item_title {
+    height: 5rem;
+    width: 25rem;
+  }
+  }
+  
+  .gallery {
+    max-height: 90vh;
+  }
+  
+  body {
+    overflow: hidden;
+    .mainImage {
+      position: relative;
+    }
+  }
+  
+  .animation-image {
+    animation: zoomIn 3s ease-in-out;
+  }
+  
+  .animation-text {
+    animation: rubberBand 0.5s ease-in-out;
+  }
+  .animation-image1 {
+    animation: bounce 3s ease-in-out;
+  
+  }
+  
+  .animation-text1 {
+    animation: headShake 3s ease-in-out;
+  }
