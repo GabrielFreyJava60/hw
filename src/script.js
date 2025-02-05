@@ -32,4 +32,3 @@ for (let i = 0; i < boxesElements.length; i++) {
     setDetails(boxesElements[i]);
   });
 }
-

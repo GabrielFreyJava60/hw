@@ -1,3 +1,18 @@
+:root {
+    --primary-color: #333;        
+    --secondary-color: #eee;      
+    --font-size-base: 1.6rem;     
+    --spacing-small: 1rem;       
+    --spacing-medium: 2rem;      
+    --spacing-large: 3rem;       
+    --gallery-item-width: 15rem;   
+    --detailed-title-font-size: clamp(2rem, 5vw, 3rem); 
+    --detailed-title-width: clamp(20rem, 50vw, 25rem); 
+    --border-radius: 40px;       
+    --border-color: lightgrey;     
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    --transition-duration: 0.8s;   
+}
 html {
     font-size: 62.5%;
   }
@@ -167,7 +182,7 @@ html {
   
     .gallery--item_title {
       width: 12rem;
-        /* font-size: 2rem; */
+        
     }
   
     .general {
@@ -217,7 +232,7 @@ html {
       margin-left: auto;
       justify-content: space-around;
       font-size: 5 rem;
-        /* width: 35rem; */
+       
   
     }
   
@@ -300,8 +315,7 @@ html {
     animation: rubberBand 0.5s ease-in-out;
   }
   .animation-image1 {
-    animation: bounce 3s ease-in-out;
-  
+        animation: zoomIn 3s ease-in-out;
   }
   
   .animation-text1 {
